@@ -15,7 +15,7 @@ string multiply(vector <vector <int>> &a, string &b) {
     for (int i = 0; i < a.size(); i++) {
         int now = 0;
         for (int j = 0; j < b.size(); j++)
-            now += a[i][j] * get((b[j]));
+            now += a[i][j] * get(b[j]);
         res += to_string(now % 2);
     }
     return res;
